@@ -1,5 +1,10 @@
-# Class Here
+def hash_function(value):
+    sum_of_chars = 0
+    for char in value:
+        sum_of_chars += ord(char)
+        print(char, ord(char))
+        print(sum_of_chars)
 
+    return sum_of_chars % 10
 
-if __name__ == "__main__":
-    print(Solution.function(Solution))
+print("'Bob' has hash code:",hash_function('Bob'))
